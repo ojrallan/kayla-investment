@@ -8,7 +8,7 @@
   </head>
   <body>
     <div
-      class="bg-[url('/images/subaruMobile2.jpg')] bg-cover bg-center md:bg-[url('/images/subaru.jpg')] min-h-screen border border-amber-400 pb-2 flex flex-col items-center justify-between"
+      class="bg-[url('/images/subaruMobile2.jpg')] bg-cover bg-center md:bg-[url('/images/subaru.jpg')] min-h-screen pb-2 flex flex-col items-center justify-between"
     >
       <!-- Header Nav Section -->
       <div
@@ -30,7 +30,9 @@
           <p class="text-red-500 md:hidden">sm</p>
           <p class="text-blue-500 hidden md:block lg:hidden">md</p>
           <p class="text-yellow-500 hidden xl:hidden lg:block">lg</p>
-          <p class="text-yellow-500 hidden xl:block">xl</p>
+          <p class="text-yellow-500 hidden 2xl:hidden xl:block">xl</p>
+          <p class="text-yellow-500 hidden 3xl:hidden 2xl:block">2xl</p>
+          <p class="text-yellow-500 hidden 3xl:block">3xl</p>
 
           <p class="cursor-pointer">Our Fleet</p>
           <p class="cursor-pointer">Services</p>
@@ -48,7 +50,7 @@
       <div
         class="h-[100%]  w-full lg:max-w-[1200px] mx-auto text-white flex flex-col justify-center items-center"
       >
-        <h1 class=" text-center text-[66px] lg:text-[82px] xl:text-[120px] font-semibold">
+        <h1 class=" text-center text-[76px] lg:text-[82px] 2xl:text-[120px] font-bold">
           Get Your Dream Car <br />
           With Us
         </h1>
@@ -69,9 +71,68 @@
           Your Trusted Dealer in New and Foreign Used Cars
         </p> -->
       </div>
-      <p class="text-center text-gray-300">
+      <p class="text-center text-sm md:text-base mb-2 text-gray-300">
           Your Trusted Dealer in New and Foreign Used Cars
         </p>
+    </div>
+
+
+    <!-- Services Section -->
+      <div class="mt-10 md:mt-24">
+      <h2 class="text-center text-[20px]  md:text-3xl">Our Services</h2>
+      <h1 class="text-center text-[40px] md:text-6xl mt-5">
+        Here's what we can do for you
+      </h1>
+
+      <div class=" lg:w-[1200px] mx-auto p-1 md:grid grid-cols-3 gap-2 md:gap-2 mt-10 md:mt-20">
+        <div>
+          <div class="w-full flex justify-center">
+            <img
+              src="/images/sales-kayla.png"
+              class="h-10 md:h-18"
+              alt="car-icon"
+            />
+          </div>
+
+          <p class="font-semibold text-center mt-8 text-2xl">Car Sales</p>
+          <p class="text-center mt-3">
+            Find your next ride with confidence. Our dealership offers a wide
+            selection of high-quality new and pre-owned vehicles from trusted
+            brands.
+          </p>
+        </div>
+        <div>
+          <div class="w-full flex justify-center">
+            <img
+              src="/images/modify-kayla.png"
+              class="h-10 md:h-18"
+              alt="modify-icon"
+            />
+          </div>
+
+          <p class="font-semibold text-center mt-8 text-2xl">
+            Car Modification
+          </p>
+          <p class="text-center mt-3">
+            Take your car to the next level with our expert modification and
+            customization services. From performance upgrades and engine tuning
+            to body kits, rims and premium interiors, our skilled technicians
+            bring your vision to life with precision and passion.
+          </p>
+        </div>
+        <div>
+          <div class="w-full flex justify-center">
+            <img src="/images/keys-kayla.png" class="h-10 md:h-18" alt="" />
+          </div>
+
+          <p class="font-semibold text-center mt-8 text-2xl">Car Rentals</p>
+          <p class="text-center mt-3">
+            Need a vehicle for a day, a weekend getaway, or a special event? Our
+            rental service makes it easy to get behind the wheel of a car you'll
+            love - without long-term commitment.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
