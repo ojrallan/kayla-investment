@@ -45,16 +45,16 @@
           />
         </div>
         <div class="hidden md:flex gap-5 lg:text-base items-center">
-          <p class="text-red-500 md:hidden">sm</p>
+          <!-- <p class="text-red-500 md:hidden">sm</p>
           <p class="text-blue-500 hidden md:block lg:hidden">md</p>
           <p class="text-yellow-500 hidden xl:hidden lg:block">lg</p>
           <p class="text-yellow-500 hidden 2xl:hidden xl:block">xl</p>
           <p class="text-yellow-500 hidden 3xl:hidden 2xl:block">2xl</p>
-          <p class="text-yellow-500 hidden 3xl:block">3xl</p>
+          <p class="text-yellow-500 hidden 3xl:block">3xl</p> -->
 
-          <p class="cursor-pointer">Our Fleet</p>
-          <p class="cursor-pointer">Services</p>
-          <p class="cursor-pointer">Contact</p>
+          <a href="#fleet-section" class="cursor-pointer">Our Fleet</a>
+          <a href="#services-section" class="cursor-pointer">Services</a>
+          <a href="#footer-section" class="cursor-pointer">Contact</a>
           <div
             class="bg-cyan-400 cursor-pointer hover:bg-cyan-500 transition duration-75 h-16 flex justify-center items-center px-4"
           >
@@ -70,7 +70,11 @@
         <a href="#fleet-section">Our Fleet</a>
         <a href="#services-section">Services</a>
         <a href="#footer-section">Contact</a>
-        <a href="tel:+256783416033" class="bg-cyan-400 p-2 w-fit text-white rounded-sm">Call Us</a>
+        <a
+          href="tel:+256783416033"
+          class="bg-cyan-400 p-2 w-fit text-white rounded-sm"
+          >Call Us</a
+        >
       </div>
       <!-- End of Header Nav Section -->
 
@@ -89,12 +93,12 @@
           <div
             class="border-2 px-3 py-3 md:px-5 md:py-3 xl:px-10 xl:py-5 cursor-pointer hover:text-cyan-300 hover:border-cyan-300"
           >
-            <p>View Fleet</p>
+            <a href="#fleet-section">View Fleet</a>
           </div>
           <div
             class="border-2 px-3 py-3 md:px-5 md:py-3 xl:px-10 xl:py-5 cursor-pointer hover:text-cyan-300 hover:border-cyan-300"
           >
-            <p>Contact Us</p>
+            <a href="#footer-section">Contact Us</a>
           </div>
         </div>
         <!-- <p class="mt-10 text-gray-300">
@@ -190,10 +194,14 @@
       <div
         class="lg:max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-16 p-2"
       >
-        <!-- Card -->
+        <!--Black CXV Card -->
         <div class="border-gray-100 border-1 pb-5">
           <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/cxv-black-front.jpg"
+              alt=""
+            />
           </div>
           <div class="p-3">
             <p class="text-sm">Mazda CX-5</p>
@@ -214,15 +222,287 @@
               </div>
             </div>
           </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="blackcxv"
+            >
+              View Images
+            </button>
           </div>
         </div>
         <!--  -->
-        <!-- Card -->
+
+        <!--Stone Fielder Card -->
         <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/fielder-stone-front.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Toyota Fielder</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="stoneFielder"
+            >
+              View Images
+            </button>
+          </div>
+
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+        </div>
+        <!--  -->
+
+        <!--White Forester Card -->
+        <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/forester-white-front-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Subaru Forester</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="whiteForester"
+            >
+              View Images
+            </button>
+          </div>
+
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+        </div>
+        <!--  -->
+        <!-- Red CXV Card -->
+        <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/cxv-red-front-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Mazda CX-5</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="redcxv"
+            >
+              View Images
+            </button>
+          </div>
+        </div>
+        <!--  -->
+        <!--Black Forester Card -->
+        <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/forester-black-front.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Subaru Forester</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="blackForester"
+            >
+              View Images
+            </button>
+          </div>
+
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+        </div>
+        <!--  -->
+
+        <!--Green Forester Card -->
+        <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/forester-green-front-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Subaru Forester</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="greenForester"
+            >
+              View Images
+            </button>
+          </div>
+
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+        </div>
+        <!--  -->
+        <!-- Black Noah Card -->
+        <div class="border-gray-100 border-1 pb-5">
+          <div class="w-full">
+            <img
+              class="car-thumb h-full"
+              src="/images/cars/noah-black-front.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p-3">
+            <p class="text-sm">Noah</p>
+            <p class="font-semibold">UGX 22,000,00</p>
+            <hr class="mt-2 border-gray-200" />
+            <div class="grid grid-cols-3 text-xs gap-0">
+              <div class="text-center">
+                <p class="font-semibold">Gear Box</p>
+                <p>Automatic</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Drive</p>
+                <p>4WD</p>
+              </div>
+              <div class="text-center">
+                <p class="font-semibold">Mileage</p>
+                <p>120k km</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              class="view-images-btn text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+              data-make="blackNoah"
+            >
+              View Images
+            </button>
+          </div>
+
+          <!-- <div
+            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
+          >
+            <p>View Images</p>
+          </div> -->
+        </div>
+        <!--  -->
+
+        <!-- Card -->
+        <!-- <div class="border-gray-100 border-1 pb-5">
           <div class="w-full">
             <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
           </div>
@@ -250,193 +530,7 @@
           >
             <p>View Images</p>
           </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
-        <!--  -->
-        <!-- Card -->
-        <div class="border-gray-100 border-1 pb-5">
-          <div class="w-full">
-            <img class="h-full" src="/images/cars/cxv-black-rear.jpg" alt="" />
-          </div>
-          <div class="p-3">
-            <p class="text-sm">Mazda CX-5</p>
-            <p class="font-semibold">UGX 22,000,00</p>
-            <hr class="mt-2 border-gray-200" />
-            <div class="grid grid-cols-3 text-xs gap-0">
-              <div class="text-center">
-                <p class="font-semibold">Gear Box</p>
-                <p>Automatic</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Drive</p>
-                <p>4WD</p>
-              </div>
-              <div class="text-center">
-                <p class="font-semibold">Mileage</p>
-                <p>120k km</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="text-white bg-cyan-400 w-fit px-5 py-2 mx-auto rounded-sm hover:bg-cyan-500 transition duration-75 cursor-pointer"
-          >
-            <p>View Images</p>
-          </div>
-        </div>
+        </div> -->
         <!-- End of Fleet  -->
       </div>
       <div
@@ -499,7 +593,8 @@
     <!-- End of Reviews -->
 
     <!-- Footer -->
-    <div id="footer-section"
+    <div
+      id="footer-section"
       class="h-fit xl:pt-24 xl:pb-12 px-3 bg-slate-100 mt-10 pt-12 pb-12 text-slate-700"
     >
       <div
@@ -597,6 +692,41 @@
       </p>
     </div>
     <!-- End of Footer -->
+    <!-- <div class="fixed inset-0 bg-black bg-opacity-50 hidden items-center flex items-center justify-center z-50"></div> -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50"
+    >
+      <button
+        id="closeBtn"
+        class="absolute top-5 right-5 text-white text-3xl font-bold"
+      >
+        &times;
+      </button>
+
+      <div class="relative max-w-3xl w-full flex items-center justify-center">
+        <button
+          id="prevBtn"
+          class="absolute left-4 text-white text-4xl font-bold select-none"
+        >
+          &#10094;
+        </button>
+
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+          class="max-h-[80vh] rounded-lg transition duration-300"
+        />
+
+        <button
+          id="nextBtn"
+          class="absolute right-4 text-white text-4xl font-bold select-none"
+        >
+          &#10095;
+        </button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
