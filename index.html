@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,16 +13,16 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   
+
     <title>Kayla 3</title>
   </head>
-  <body class="open-sans-light">
+  <body class="open-sans-light scroll-smooth">
     <div
       class="bg-[url('/images/subaruMobile2.jpg')] bg-cover bg-center md:bg-[url('/images/subaru.jpg')] min-h-screen pb-2 flex flex-col items-center justify-between"
     >
       <!-- Header Nav Section -->
       <div
-        class="text-white w-full p-2 lg:max-w-[1200px] mx-auto flex justify-between font-semibold"
+        class="text-white w-full p-2 lg:max-w-[1200px] mx-auto flex justify-between font-semibold relative h-14 md:h-20 xl:h-22"
       >
         <div class="flex justify-center items-center gap-5 text-xl">
           <img
@@ -31,10 +31,18 @@
             alt=""
             srcset=""
           />
-          <p class="text-sm md:text-base ">Kayla 3 Investment Limited</p>
+          <p class="text-sm md:text-base">Kayla 3 Investment Limited</p>
         </div>
-        <div id="nav-toggle"  class="md:hidden h-full flex justify-center items-center">
-          <img id="toggle-icon" src="/images/cross.png" class="w-8" alt="" />
+        <div
+          id="nav-toggle"
+          class="md:hidden h-full flex justify-center items-center cursor-pointer"
+        >
+          <img
+            id="toggle-icon"
+            src="/images/hamb-menu2.png"
+            class="w-8"
+            alt=""
+          />
         </div>
         <div class="hidden md:flex gap-5 lg:text-base items-center">
           <p class="text-red-500 md:hidden">sm</p>
@@ -53,6 +61,16 @@
             <p>+256-783416033</p>
           </div>
         </div>
+      </div>
+
+      <div
+        id="slide-menu"
+        class="hidden md:hidden w-48 bg-white py-2 px-2 flex flex-col gap-2 absolute top-14 right-0 opacity-0 transition-opacity duration-150 ease-in-out"
+      >
+        <a href="#fleet-section">Our Fleet</a>
+        <a href="#services-section">Services</a>
+        <a href="#footer-section">Contact</a>
+        <a href="tel:+256783416033" class="bg-cyan-400 p-2 w-fit text-white rounded-sm">Call Us</a>
       </div>
       <!-- End of Header Nav Section -->
 
@@ -89,11 +107,13 @@
     </div>
 
     <!-- Services Section -->
-    <div class="mt-10 md:mt-24">
+    <div id="services-section" class="mt-10 md:mt-24">
       <h2 class="text-center text-[20px] md:text-2xl 2xl:text-3xl oswald">
         Our Services
       </h2>
-      <h1 class="text-center text-[30px] md:text-5xl 2xl:text-6xl mt-5 px-2 oswald">
+      <h1
+        class="text-center text-[30px] md:text-5xl 2xl:text-6xl mt-5 px-2 oswald"
+      >
         Here's what we can do for you
       </h1>
 
@@ -125,7 +145,9 @@
             />
           </div>
 
-          <p class="font-semibold text-center mt-8 text-xl oswald">Car Modification</p>
+          <p class="font-semibold text-center mt-8 text-xl oswald">
+            Car Modification
+          </p>
           <p class="text-center mt-3 px-5 md:px-3">
             Take your car to the next level with our expert modification and
             customization services. From performance upgrades and engine tuning
@@ -138,7 +160,9 @@
             <img src="/images/keys-kayla.png" class="h-10 md:h-16" alt="" />
           </div>
 
-          <p class="font-semibold text-center mt-8 text-xl oswald">Car Rentals</p>
+          <p class="font-semibold text-center mt-8 text-xl oswald">
+            Car Rentals
+          </p>
           <p class="text-center mt-3 px-5 md:px-3">
             Need a vehicle for a day, a weekend getaway, or a special event? Our
             rental service makes it easy to get behind the wheel of a car you'll
@@ -153,11 +177,13 @@
     <!-- End of Services -->
 
     <!-- Fleet Section -->
-    <div class="mt-10 md:mt-24">
+    <div id="fleet-section" class="mt-10 md:mt-24">
       <h2 class="text-center text-[20px] md:text-2xl 2xl:text-3xl oswald">
         Our Fleet
       </h2>
-      <h1 class="text-center text-[30px] md:text-5xl 2xl:text-6xl mt-5 px-2 oswald">
+      <h1
+        class="text-center text-[30px] md:text-5xl 2xl:text-6xl mt-5 px-2 oswald"
+      >
         Have a Look At Our Range of Vehicles
       </h1>
 
@@ -422,7 +448,9 @@
     <div
       class="min-h-[400px] mt-10 md:mt-28 bg-gray-800 md:flex justify-center items-center p-2"
     >
-      <p class="md:hidden text-[20px] text-white text-center oswald">Reviews From</p>
+      <p class="md:hidden text-[20px] text-white text-center oswald">
+        Reviews From
+      </p>
       <p class="md:hidden text-[30px] text-center text-white mb-5 oswald">
         Our Happy Clients!
       </p>
@@ -433,7 +461,7 @@
           <h3 class="md:text-5xl 2xl:text-6xl font-semibold oswald">
             Our Happy Clients!
           </h3>
-          <p class="mt-6 md:text-lg ">
+          <p class="mt-6 md:text-lg">
             Here's a word or two from a few of our clients.
           </p>
         </div>
@@ -471,7 +499,7 @@
     <!-- End of Reviews -->
 
     <!-- Footer -->
-    <div
+    <div id="footer-section"
       class="h-fit xl:pt-24 xl:pb-12 px-3 bg-slate-100 mt-10 pt-12 pb-12 text-slate-700"
     >
       <div
@@ -569,6 +597,6 @@
       </p>
     </div>
     <!-- End of Footer -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
