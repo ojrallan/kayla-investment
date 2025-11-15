@@ -33,6 +33,44 @@ function closeSlide() {
 }
 
 const carImages = {
+  silverForester: [
+    "images/cars/silver_forester/subaru_silver_front.jpg",
+    "images/cars/silver_forester/subaru_silver_front_2.jpg",
+    "images/cars/silver_forester/subaru_silver_interior_1.jpg",
+    "images/cars/silver_forester/subaru_silver_interior_2.jpg",
+    "images/cars/silver_forester/subaru_silver_rear.jpg",
+  ],
+  greenMarkX: [
+    "images/cars/green_mark_x/mark_x_front_1.jpg",
+    "images/cars/green_mark_x/mark_x_front_2.jpg",
+    "images/cars/green_mark_x/mark_x_interior_1.jpg",
+    "images/cars/green_mark_x/mark_x_interior_2.jpg",
+    "images/cars/green_mark_x/mark_x_rear_1.jpg",
+    "images/cars/green_mark_x/mark_x_rear_1.jpg",
+  ],
+  outback: [
+    "images/cars/subaru_outback/subaru_outback_front.jpg",
+    "images/cars/subaru_outback/subaru_outback_interior.jpg",
+    "images/cars/subaru_outback/subaru_outback_rear.jpg",
+  ],
+  grayMarkX: [
+    "images/cars/gray_mark_x/mark_x_front.jpg",
+    "images/cars/gray_mark_x/mark_x_interior_1.jpg",
+    "images/cars/gray_mark_x/mark_x_interior_2.jpg",
+    "images/cars/gray_mark_x/mark_x_rear.jpg",
+    
+   
+  ],
+  hijet: [
+    "images/cars/hijet/hijet_front.jpg",
+    "images/cars/hijet/hijet_interior_1.jpg",
+    "images/cars/hijet/hijet_interior_2.jpg",
+    "images/cars/hijet/hijet_rear.jpg",
+  ],
+  kawundo: [
+    "images/cars/kawundo/kawundo_front.jpg",
+    "images/cars/kawundo/kawundo_rear.jpg",
+  ],
   blackcxv: [
     "/images/cars/cxv-black-front.jpg",
     "/images/cars/cxv-black-rear.jpg",
